@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:id="@+id/main_layout_id"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PENDAFTARAN SISWA(I) SMK JAYA PEMBANGUNAN 2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sebelum mengisi formulir ini diharapkan walimurid telah melengkapi persyaratan yang ditentukan"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Nama" />
+
+            <EditText
+                android:id="@+id/et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Depan" />
+
+            <EditText
+                android:id="@+id/et_namaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Belakang" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokasi" />
+
+            <EditText
+                android:id="@+id/et_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="HP" />
+
+            <EditText
+                android:id="@+id/et_telepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telpon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin" />
+
+            <Spinner
+                android:id="@+id/sp_jk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/jk" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lulusan" />
+
+            <RadioGroup
+                android:id="@+id/rg_lulusan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_SMA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SMP" />
+
+                <RadioButton
+                    android:id="@+id/rb_SMK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SMPI" />
+
+                <RadioButton
+                    android:id="@+id/rb_MA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MTS" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/cb_valid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Data Ini Valid" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilihan Sekolah Alternatif" />
+
+            <Spinner
+                android:id="@+id/sp_psa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/psa" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_simpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#FF0000"
+                    android:drawableLeft="@drawable/ic_cloud_download"
+                    android:gravity="left|center_vertical"
+                    android:text="Simpan" />
+
+                <Button
+                    android:id="@+id/bt_hapus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#FFFF00"
+                    android:drawableLeft="@drawable/ic_delete_forever"
+                    android:gravity="left|center_vertical"
+                    android:text="Hapus" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_toast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#00FF00"
+                    android:drawableLeft="@drawable/ic_android"
+                    android:gravity="left|center_vertical"
+                    android:text="Toast" />
+
+                <Button
+                    android:id="@+id/bt_notifikasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#00FFFF"
+                    android:drawableLeft="@drawable/ic_notifications"
+                    android:gravity="left|center_vertical"
+                    android:text="Notifikasi" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_snack_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#F0F8FF"
+                    android:drawableLeft="@drawable/ic_notifications"
+                    android:gravity="left|center_vertical"
+                    android:text="Snackbar" />
+
+                <Button
+                    android:id="@+id/bt_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#FAEBD7"
+                    android:drawableLeft="@drawable/ic_android"
+                    android:gravity="left|center_vertical"
+                    android:text="Exit" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

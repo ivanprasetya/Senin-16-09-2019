@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Exercise UTS ANDROID</string>
+    <string-array name="jk">
+        <item>Laki - Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="psa">
+        <item>SMK Dwidaya</item>
+        <item>SMU Don Bosco</item>
+        <item>SMK Merah Putih</item>
+        <item>SMU Sutarmadja</item>
+    </string-array>
+</resources>

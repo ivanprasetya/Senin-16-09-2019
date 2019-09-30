@@ -1,0 +1,4 @@
+1. https://developer.android.com/guide/topics/ui/declaring-layout
+2. https://www.pinterest.com/formuladesign/ui-ux-design/
+3. https://romannurik.github.io/AndroidAssetStudio/
+4. 

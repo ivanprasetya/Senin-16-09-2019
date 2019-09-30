@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/mn_cari"
+        android:title="Temukan"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/mn_simpan"
+        android:title="Simpan"
+        android:icon="@drawable/ic_action_add"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/mn_kosong"
+        android:title="Kosong"
+        android:icon="@drawable/ic_action_delete"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/mn_biodata"
+        android:title="Biodata"
+        android:icon="@drawable/ic_action_account_box"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/mn_snack"
+        android:title="SnackBar"
+        android:icon="@drawable/ic_action_cloud_queue"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/mn_toast"
+        android:title="Toast"
+        android:icon="@drawable/ic_action_check"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/mn_alert"
+        android:title="Alert"
+        android:icon="@drawable/ic_action_create"
+        app:showAsAction="never"/>
+
+</menu>
